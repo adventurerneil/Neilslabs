@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFCCA48E17DF6F54006B8603 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCCA48D17DF6F54006B8603 /* UIKit.framework */; };
+		FFCCA49017DF6F54006B8603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCCA48F17DF6F54006B8603 /* Foundation.framework */; };
+		FFCCA49217DF6F54006B8603 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCCA49117DF6F54006B8603 /* CoreGraphics.framework */; };
+		FFCCA49817DF6F54006B8603 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA49617DF6F54006B8603 /* InfoPlist.strings */; };
+		FFCCA49A17DF6F54006B8603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA49917DF6F54006B8603 /* main.m */; };
+		FFCCA49E17DF6F54006B8603 /* MADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA49D17DF6F54006B8603 /* MADAppDelegate.m */; };
+		FFCCA4A017DF6F54006B8603 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA49F17DF6F54006B8603 /* Default.png */; };
+		FFCCA4A217DF6F54006B8603 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA4A117DF6F54006B8603 /* Default@2x.png */; };
+		FFCCA4A417DF6F54006B8603 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA4A317DF6F54006B8603 /* Default-568h@2x.png */; };
+		FFCCA4A717DF6F54006B8603 /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCCA4A617DF6F54006B8603 /* MADViewController.m */; };
+		FFCCA4AA17DF6F54006B8603 /* MADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA4A817DF6F54006B8603 /* MADViewController.xib */; };
+		FFCCA4B317DF7085006B8603 /* broncos_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA4B017DF7085006B8603 /* broncos_logo.png */; };
+		FFCCA4B417DF7085006B8603 /* co_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA4B117DF7085006B8603 /* co_logo.png */; };
+		FFCCA4B517DF7085006B8603 /* rockies_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCA4B217DF7085006B8603 /* rockies_logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFCCA48A17DF6F54006B8603 /* sportImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCCA48D17DF6F54006B8603 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFCCA48F17DF6F54006B8603 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFCCA49117DF6F54006B8603 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFCCA49517DF6F54006B8603 /* sportImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sportImage-Info.plist"; sourceTree = "<group>"; };
+		FFCCA49717DF6F54006B8603 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFCCA49917DF6F54006B8603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFCCA49B17DF6F54006B8603 /* sportImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sportImage-Prefix.pch"; sourceTree = "<group>"; };
+		FFCCA49C17DF6F54006B8603 /* MADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAppDelegate.h; sourceTree = "<group>"; };
+		FFCCA49D17DF6F54006B8603 /* MADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAppDelegate.m; sourceTree = "<group>"; };
+		FFCCA49F17DF6F54006B8603 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FFCCA4A117DF6F54006B8603 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FFCCA4A317DF6F54006B8603 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FFCCA4A517DF6F54006B8603 /* MADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
+		FFCCA4A617DF6F54006B8603 /* MADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
+		FFCCA4A917DF6F54006B8603 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MADViewController.xib; sourceTree = "<group>"; };
+		FFCCA4B017DF7085006B8603 /* broncos_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broncos_logo.png; sourceTree = "<group>"; };
+		FFCCA4B117DF7085006B8603 /* co_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = co_logo.png; sourceTree = "<group>"; };
+		FFCCA4B217DF7085006B8603 /* rockies_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rockies_logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCCA48717DF6F54006B8603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCA48E17DF6F54006B8603 /* UIKit.framework in Frameworks */,
+				FFCCA49017DF6F54006B8603 /* Foundation.framework in Frameworks */,
+				FFCCA49217DF6F54006B8603 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFCCA48117DF6F54006B8603 = {
+			isa = PBXGroup;
+			children = (
+				FFCCA49317DF6F54006B8603 /* sportImage */,
+				FFCCA48C17DF6F54006B8603 /* Frameworks */,
+				FFCCA48B17DF6F54006B8603 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCCA48B17DF6F54006B8603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCA48A17DF6F54006B8603 /* sportImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCCA48C17DF6F54006B8603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCA48D17DF6F54006B8603 /* UIKit.framework */,
+				FFCCA48F17DF6F54006B8603 /* Foundation.framework */,
+				FFCCA49117DF6F54006B8603 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCCA49317DF6F54006B8603 /* sportImage */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCA49C17DF6F54006B8603 /* MADAppDelegate.h */,
+				FFCCA49D17DF6F54006B8603 /* MADAppDelegate.m */,
+				FFCCA4A517DF6F54006B8603 /* MADViewController.h */,
+				FFCCA4A617DF6F54006B8603 /* MADViewController.m */,
+				FFCCA4A817DF6F54006B8603 /* MADViewController.xib */,
+				FFCCA49417DF6F54006B8603 /* Supporting Files */,
+			);
+			path = sportImage;
+			sourceTree = "<group>";
+		};
+		FFCCA49417DF6F54006B8603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCA4B017DF7085006B8603 /* broncos_logo.png */,
+				FFCCA4B117DF7085006B8603 /* co_logo.png */,
+				FFCCA4B217DF7085006B8603 /* rockies_logo.png */,
+				FFCCA49517DF6F54006B8603 /* sportImage-Info.plist */,
+				FFCCA49617DF6F54006B8603 /* InfoPlist.strings */,
+				FFCCA49917DF6F54006B8603 /* main.m */,
+				FFCCA49B17DF6F54006B8603 /* sportImage-Prefix.pch */,
+				FFCCA49F17DF6F54006B8603 /* Default.png */,
+				FFCCA4A117DF6F54006B8603 /* Default@2x.png */,
+				FFCCA4A317DF6F54006B8603 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCCA48917DF6F54006B8603 /* sportImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCCA4AD17DF6F54006B8603 /* Build configuration list for PBXNativeTarget "sportImage" */;
+			buildPhases = (
+				FFCCA48617DF6F54006B8603 /* Sources */,
+				FFCCA48717DF6F54006B8603 /* Frameworks */,
+				FFCCA48817DF6F54006B8603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sportImage;
+			productName = sportImage;
+			productReference = FFCCA48A17DF6F54006B8603 /* sportImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFCCA48217DF6F54006B8603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Neil Dimuccio";
+			};
+			buildConfigurationList = FFCCA48517DF6F54006B8603 /* Build configuration list for PBXProject "sportImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFCCA48117DF6F54006B8603;
+			productRefGroup = FFCCA48B17DF6F54006B8603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCCA48917DF6F54006B8603 /* sportImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCCA48817DF6F54006B8603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCA49817DF6F54006B8603 /* InfoPlist.strings in Resources */,
+				FFCCA4A017DF6F54006B8603 /* Default.png in Resources */,
+				FFCCA4A217DF6F54006B8603 /* Default@2x.png in Resources */,
+				FFCCA4A417DF6F54006B8603 /* Default-568h@2x.png in Resources */,
+				FFCCA4AA17DF6F54006B8603 /* MADViewController.xib in Resources */,
+				FFCCA4B317DF7085006B8603 /* broncos_logo.png in Resources */,
+				FFCCA4B417DF7085006B8603 /* co_logo.png in Resources */,
+				FFCCA4B517DF7085006B8603 /* rockies_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCCA48617DF6F54006B8603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCA49A17DF6F54006B8603 /* main.m in Sources */,
+				FFCCA49E17DF6F54006B8603 /* MADAppDelegate.m in Sources */,
+				FFCCA4A717DF6F54006B8603 /* MADViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFCCA49617DF6F54006B8603 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCCA49717DF6F54006B8603 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFCCA4A817DF6F54006B8603 /* MADViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCCA4A917DF6F54006B8603 /* en */,
+			);
+			name = MADViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFCCA4AB17DF6F54006B8603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FFCCA4AC17DF6F54006B8603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFCCA4AE17DF6F54006B8603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sportImage/sportImage-Prefix.pch";
+				INFOPLIST_FILE = "sportImage/sportImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFCCA4AF17DF6F54006B8603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sportImage/sportImage-Prefix.pch";
+				INFOPLIST_FILE = "sportImage/sportImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFCCA48517DF6F54006B8603 /* Build configuration list for PBXProject "sportImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCCA4AB17DF6F54006B8603 /* Debug */,
+				FFCCA4AC17DF6F54006B8603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCCA4AD17DF6F54006B8603 /* Build configuration list for PBXNativeTarget "sportImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCCA4AE17DF6F54006B8603 /* Debug */,
+				FFCCA4AF17DF6F54006B8603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFCCA48217DF6F54006B8603 /* Project object */;
+}
