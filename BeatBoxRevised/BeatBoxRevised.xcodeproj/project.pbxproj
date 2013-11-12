@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0640F31832815200D61529 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0640F01832815200D61529 /* 76.png */; };
+		CE0640F41832815200D61529 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0640F11832815200D61529 /* 120.png */; };
+		CE0640F51832815200D61529 /* beatbox152.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0640F21832815200D61529 /* beatbox152.png */; };
+		CE0640F71832818700D61529 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0640F61832818700D61529 /* 144.png */; };
+		CE0640F9183281BC00D61529 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0640F8183281BC00D61529 /* 72.png */; };
+		CE27F8341831F1E4004DD88D /* Play2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE27F8331831F1E3004DD88D /* Play2ViewController.m */; };
+		CE27F83D18320FEC004DD88D /* Boing.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83518320FEB004DD88D /* Boing.wav */; };
+		CE27F83E18320FEC004DD88D /* ChuToy.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83618320FEB004DD88D /* ChuToy.wav */; };
+		CE27F83F18320FEC004DD88D /* Clink-Klank.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83718320FEB004DD88D /* Clink-Klank.wav */; };
+		CE27F84018320FEC004DD88D /* Indigo.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83818320FEB004DD88D /* Indigo.wav */; };
+		CE27F84118320FEC004DD88D /* newbip.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83918320FEC004DD88D /* newbip.wav */; };
+		CE27F84218320FEC004DD88D /* Pong2003.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83A18320FEC004DD88D /* Pong2003.wav */; };
+		CE27F84318320FEC004DD88D /* Quack.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83B18320FEC004DD88D /* Quack.wav */; };
+		CE27F84418320FEC004DD88D /* Sosumi.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83C18320FEC004DD88D /* Sosumi.wav */; };
+		FF924A261830379000ACD7D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A251830379000ACD7D5 /* UIKit.framework */; };
+		FF924A281830379000ACD7D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A271830379000ACD7D5 /* Foundation.framework */; };
+		FF924A2A1830379000ACD7D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A291830379000ACD7D5 /* CoreGraphics.framework */; };
+		FF924A301830379000ACD7D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF924A2E1830379000ACD7D5 /* InfoPlist.strings */; };
+		FF924A321830379000ACD7D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF924A311830379000ACD7D5 /* main.m */; };
+		FF924A361830379000ACD7D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF924A351830379000ACD7D5 /* AppDelegate.m */; };
+		FF924A381830379000ACD7D5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FF924A371830379000ACD7D5 /* Default.png */; };
+		FF924A3A1830379000ACD7D5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF924A391830379000ACD7D5 /* Default@2x.png */; };
+		FF924A3C1830379000ACD7D5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF924A3B1830379000ACD7D5 /* Default-568h@2x.png */; };
+		FF924A3F1830379000ACD7D5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF924A3D1830379000ACD7D5 /* MainStoryboard.storyboard */; };
+		FF924A421830379000ACD7D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF924A411830379000ACD7D5 /* ViewController.m */; };
+		FF924A4B18303B8400ACD7D5 /* BubbleAppear.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF924A4A18303B8400ACD7D5 /* BubbleAppear.wav */; };
+		FF924A4D18303B8D00ACD7D5 /* Select.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF924A4C18303B8D00ACD7D5 /* Select.wav */; };
+		FF924A4F18303B9D00ACD7D5 /* Volume.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF924A4E18303B9D00ACD7D5 /* Volume.wav */; };
+		FF924A5118303BA800ACD7D5 /* WrapBoundary_Alternate.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF924A5018303BA800ACD7D5 /* WrapBoundary_Alternate.wav */; };
+		FF924A5318303C1500ACD7D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A5218303C1500ACD7D5 /* AudioToolbox.framework */; };
+		FF924A5518303C1C00ACD7D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A5418303C1C00ACD7D5 /* AVFoundation.framework */; };
+		FF924A5718303C3A00ACD7D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A5618303C3A00ACD7D5 /* QuartzCore.framework */; };
+		FF924A5A18303D5E00ACD7D5 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF924A5918303D5E00ACD7D5 /* WelcomeViewController.m */; };
+		FF924A5D18303D9F00ACD7D5 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF924A5C18303D9F00ACD7D5 /* OptionsViewController.m */; };
+		FF924A6018303FAB00ACD7D5 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF924A5F18303FAB00ACD7D5 /* PlayViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE0640F01832815200D61529 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 76.png; path = ../76.png; sourceTree = "<group>"; };
+		CE0640F11832815200D61529 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = ../120.png; sourceTree = "<group>"; };
+		CE0640F21832815200D61529 /* beatbox152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beatbox152.png; path = ../beatbox152.png; sourceTree = "<group>"; };
+		CE0640F61832818700D61529 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 144.png; path = ../144.png; sourceTree = "<group>"; };
+		CE0640F8183281BC00D61529 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72.png; path = ../72.png; sourceTree = "<group>"; };
+		CE27F8321831F1E3004DD88D /* Play2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Play2ViewController.h; sourceTree = "<group>"; };
+		CE27F8331831F1E3004DD88D /* Play2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Play2ViewController.m; sourceTree = "<group>"; };
+		CE27F83518320FEB004DD88D /* Boing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Boing.wav; sourceTree = "<group>"; };
+		CE27F83618320FEB004DD88D /* ChuToy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ChuToy.wav; sourceTree = "<group>"; };
+		CE27F83718320FEB004DD88D /* Clink-Klank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Clink-Klank.wav"; sourceTree = "<group>"; };
+		CE27F83818320FEB004DD88D /* Indigo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Indigo.wav; sourceTree = "<group>"; };
+		CE27F83918320FEC004DD88D /* newbip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = newbip.wav; sourceTree = "<group>"; };
+		CE27F83A18320FEC004DD88D /* Pong2003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pong2003.wav; sourceTree = "<group>"; };
+		CE27F83B18320FEC004DD88D /* Quack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Quack.wav; sourceTree = "<group>"; };
+		CE27F83C18320FEC004DD88D /* Sosumi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sosumi.wav; sourceTree = "<group>"; };
+		FF924A221830379000ACD7D5 /* BeatBoxRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatBoxRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF924A251830379000ACD7D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF924A271830379000ACD7D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF924A291830379000ACD7D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF924A2D1830379000ACD7D5 /* BeatBoxRevised-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeatBoxRevised-Info.plist"; sourceTree = "<group>"; };
+		FF924A2F1830379000ACD7D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF924A311830379000ACD7D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF924A331830379000ACD7D5 /* BeatBoxRevised-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeatBoxRevised-Prefix.pch"; sourceTree = "<group>"; };
+		FF924A341830379000ACD7D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF924A351830379000ACD7D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF924A371830379000ACD7D5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FF924A391830379000ACD7D5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FF924A3B1830379000ACD7D5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FF924A3E1830379000ACD7D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FF924A401830379000ACD7D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF924A411830379000ACD7D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF924A4A18303B8400ACD7D5 /* BubbleAppear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = BubbleAppear.wav; path = ../BubbleAppear.wav; sourceTree = "<group>"; };
+		FF924A4C18303B8D00ACD7D5 /* Select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Select.wav; path = ../Select.wav; sourceTree = "<group>"; };
+		FF924A4E18303B9D00ACD7D5 /* Volume.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Volume.wav; path = ../Volume.wav; sourceTree = "<group>"; };
+		FF924A5018303BA800ACD7D5 /* WrapBoundary_Alternate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = WrapBoundary_Alternate.wav; path = ../WrapBoundary_Alternate.wav; sourceTree = "<group>"; };
+		FF924A5218303C1500ACD7D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF924A5418303C1C00ACD7D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FF924A5618303C3A00ACD7D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF924A5818303D5E00ACD7D5 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		FF924A5918303D5E00ACD7D5 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		FF924A5B18303D9F00ACD7D5 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		FF924A5C18303D9F00ACD7D5 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		FF924A5E18303FAB00ACD7D5 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		FF924A5F18303FAB00ACD7D5 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF924A1F1830379000ACD7D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF924A5718303C3A00ACD7D5 /* QuartzCore.framework in Frameworks */,
+				FF924A5518303C1C00ACD7D5 /* AVFoundation.framework in Frameworks */,
+				FF924A5318303C1500ACD7D5 /* AudioToolbox.framework in Frameworks */,
+				FF924A261830379000ACD7D5 /* UIKit.framework in Frameworks */,
+				FF924A281830379000ACD7D5 /* Foundation.framework in Frameworks */,
+				FF924A2A1830379000ACD7D5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF924A191830379000ACD7D5 = {
+			isa = PBXGroup;
+			children = (
+				FF924A2B1830379000ACD7D5 /* BeatBoxRevised */,
+				FF924A241830379000ACD7D5 /* Frameworks */,
+				FF924A231830379000ACD7D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF924A231830379000ACD7D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF924A221830379000ACD7D5 /* BeatBoxRevised.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF924A241830379000ACD7D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF924A5618303C3A00ACD7D5 /* QuartzCore.framework */,
+				FF924A5418303C1C00ACD7D5 /* AVFoundation.framework */,
+				FF924A5218303C1500ACD7D5 /* AudioToolbox.framework */,
+				FF924A251830379000ACD7D5 /* UIKit.framework */,
+				FF924A271830379000ACD7D5 /* Foundation.framework */,
+				FF924A291830379000ACD7D5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF924A2B1830379000ACD7D5 /* BeatBoxRevised */ = {
+			isa = PBXGroup;
+			children = (
+				FF924A341830379000ACD7D5 /* AppDelegate.h */,
+				FF924A351830379000ACD7D5 /* AppDelegate.m */,
+				FF924A3D1830379000ACD7D5 /* MainStoryboard.storyboard */,
+				CE27F8321831F1E3004DD88D /* Play2ViewController.h */,
+				CE27F8331831F1E3004DD88D /* Play2ViewController.m */,
+				FF924A5E18303FAB00ACD7D5 /* PlayViewController.h */,
+				FF924A5F18303FAB00ACD7D5 /* PlayViewController.m */,
+				FF924A5B18303D9F00ACD7D5 /* OptionsViewController.h */,
+				FF924A5C18303D9F00ACD7D5 /* OptionsViewController.m */,
+				FF924A5818303D5E00ACD7D5 /* WelcomeViewController.h */,
+				FF924A5918303D5E00ACD7D5 /* WelcomeViewController.m */,
+				FF924A2C1830379000ACD7D5 /* Supporting Files */,
+			);
+			path = BeatBoxRevised;
+			sourceTree = "<group>";
+		};
+		FF924A2C1830379000ACD7D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0640F8183281BC00D61529 /* 72.png */,
+				CE0640F61832818700D61529 /* 144.png */,
+				CE0640F01832815200D61529 /* 76.png */,
+				CE0640F11832815200D61529 /* 120.png */,
+				CE0640F21832815200D61529 /* beatbox152.png */,
+				CE27F83518320FEB004DD88D /* Boing.wav */,
+				CE27F83618320FEB004DD88D /* ChuToy.wav */,
+				CE27F83718320FEB004DD88D /* Clink-Klank.wav */,
+				CE27F83818320FEB004DD88D /* Indigo.wav */,
+				CE27F83918320FEC004DD88D /* newbip.wav */,
+				CE27F83A18320FEC004DD88D /* Pong2003.wav */,
+				CE27F83B18320FEC004DD88D /* Quack.wav */,
+				CE27F83C18320FEC004DD88D /* Sosumi.wav */,
+				FF924A5018303BA800ACD7D5 /* WrapBoundary_Alternate.wav */,
+				FF924A4E18303B9D00ACD7D5 /* Volume.wav */,
+				FF924A4C18303B8D00ACD7D5 /* Select.wav */,
+				FF924A4A18303B8400ACD7D5 /* BubbleAppear.wav */,
+				FF924A2D1830379000ACD7D5 /* BeatBoxRevised-Info.plist */,
+				FF924A2E1830379000ACD7D5 /* InfoPlist.strings */,
+				FF924A311830379000ACD7D5 /* main.m */,
+				FF924A331830379000ACD7D5 /* BeatBoxRevised-Prefix.pch */,
+				FF924A371830379000ACD7D5 /* Default.png */,
+				FF924A391830379000ACD7D5 /* Default@2x.png */,
+				FF924A3B1830379000ACD7D5 /* Default-568h@2x.png */,
+				FF924A401830379000ACD7D5 /* ViewController.h */,
+				FF924A411830379000ACD7D5 /* ViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF924A211830379000ACD7D5 /* BeatBoxRevised */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF924A451830379000ACD7D5 /* Build configuration list for PBXNativeTarget "BeatBoxRevised" */;
+			buildPhases = (
+				FF924A1E1830379000ACD7D5 /* Sources */,
+				FF924A1F1830379000ACD7D5 /* Frameworks */,
+				FF924A201830379000ACD7D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeatBoxRevised;
+			productName = BeatBoxRevised;
+			productReference = FF924A221830379000ACD7D5 /* BeatBoxRevised.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF924A1A1830379000ACD7D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Neil Dimuccio";
+			};
+			buildConfigurationList = FF924A1D1830379000ACD7D5 /* Build configuration list for PBXProject "BeatBoxRevised" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF924A191830379000ACD7D5;
+			productRefGroup = FF924A231830379000ACD7D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF924A211830379000ACD7D5 /* BeatBoxRevised */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF924A201830379000ACD7D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF924A301830379000ACD7D5 /* InfoPlist.strings in Resources */,
+				FF924A381830379000ACD7D5 /* Default.png in Resources */,
+				FF924A3A1830379000ACD7D5 /* Default@2x.png in Resources */,
+				FF924A3C1830379000ACD7D5 /* Default-568h@2x.png in Resources */,
+				FF924A3F1830379000ACD7D5 /* MainStoryboard.storyboard in Resources */,
+				FF924A4B18303B8400ACD7D5 /* BubbleAppear.wav in Resources */,
+				FF924A4D18303B8D00ACD7D5 /* Select.wav in Resources */,
+				FF924A4F18303B9D00ACD7D5 /* Volume.wav in Resources */,
+				FF924A5118303BA800ACD7D5 /* WrapBoundary_Alternate.wav in Resources */,
+				CE27F83D18320FEC004DD88D /* Boing.wav in Resources */,
+				CE27F83E18320FEC004DD88D /* ChuToy.wav in Resources */,
+				CE27F83F18320FEC004DD88D /* Clink-Klank.wav in Resources */,
+				CE27F84018320FEC004DD88D /* Indigo.wav in Resources */,
+				CE27F84118320FEC004DD88D /* newbip.wav in Resources */,
+				CE27F84218320FEC004DD88D /* Pong2003.wav in Resources */,
+				CE27F84318320FEC004DD88D /* Quack.wav in Resources */,
+				CE27F84418320FEC004DD88D /* Sosumi.wav in Resources */,
+				CE0640F31832815200D61529 /* 76.png in Resources */,
+				CE0640F41832815200D61529 /* 120.png in Resources */,
+				CE0640F51832815200D61529 /* beatbox152.png in Resources */,
+				CE0640F71832818700D61529 /* 144.png in Resources */,
+				CE0640F9183281BC00D61529 /* 72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF924A1E1830379000ACD7D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF924A321830379000ACD7D5 /* main.m in Sources */,
+				FF924A361830379000ACD7D5 /* AppDelegate.m in Sources */,
+				FF924A421830379000ACD7D5 /* ViewController.m in Sources */,
+				FF924A5A18303D5E00ACD7D5 /* WelcomeViewController.m in Sources */,
+				FF924A5D18303D9F00ACD7D5 /* OptionsViewController.m in Sources */,
+				FF924A6018303FAB00ACD7D5 /* PlayViewController.m in Sources */,
+				CE27F8341831F1E4004DD88D /* Play2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF924A2E1830379000ACD7D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF924A2F1830379000ACD7D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF924A3D1830379000ACD7D5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF924A3E1830379000ACD7D5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF924A431830379000ACD7D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FF924A441830379000ACD7D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF924A461830379000ACD7D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeatBoxRevised/BeatBoxRevised-Prefix.pch";
+				INFOPLIST_FILE = "BeatBoxRevised/BeatBoxRevised-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF924A471830379000ACD7D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeatBoxRevised/BeatBoxRevised-Prefix.pch";
+				INFOPLIST_FILE = "BeatBoxRevised/BeatBoxRevised-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF924A1D1830379000ACD7D5 /* Build configuration list for PBXProject "BeatBoxRevised" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF924A431830379000ACD7D5 /* Debug */,
+				FF924A441830379000ACD7D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF924A451830379000ACD7D5 /* Build configuration list for PBXNativeTarget "BeatBoxRevised" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF924A461830379000ACD7D5 /* Debug */,
+				FF924A471830379000ACD7D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF924A1A1830379000ACD7D5 /* Project object */;
+}
