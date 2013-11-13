@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFCCCBBC1816D23C00C2ADDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCCCBBB1816D23C00C2ADDB /* UIKit.framework */; };
+		FFCCCBBE1816D23C00C2ADDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCCCBBD1816D23C00C2ADDB /* Foundation.framework */; };
+		FFCCCBC01816D23C00C2ADDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCCCBBF1816D23C00C2ADDB /* CoreGraphics.framework */; };
+		FFCCCBC61816D23C00C2ADDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBC41816D23C00C2ADDB /* InfoPlist.strings */; };
+		FFCCCBC81816D23C00C2ADDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCCCBC71816D23C00C2ADDB /* main.m */; };
+		FFCCCBCC1816D23C00C2ADDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCCCBCB1816D23C00C2ADDB /* AppDelegate.m */; };
+		FFCCCBCE1816D23C00C2ADDB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBCD1816D23C00C2ADDB /* Default.png */; };
+		FFCCCBD01816D23C00C2ADDB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBCF1816D23C00C2ADDB /* Default@2x.png */; };
+		FFCCCBD21816D23C00C2ADDB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBD11816D23C00C2ADDB /* Default-568h@2x.png */; };
+		FFCCCBD51816D23C00C2ADDB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBD31816D23C00C2ADDB /* MainStoryboard.storyboard */; };
+		FFCCCBD81816D23C00C2ADDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCCCBD71816D23C00C2ADDB /* ViewController.m */; };
+		FFCCCBDF1816D48000C2ADDB /* qwordswithoutu1.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBDE1816D48000C2ADDB /* qwordswithoutu1.plist */; };
+		FFCCCBE11816D4FA00C2ADDB /* qwordswithoutu2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBE01816D4FA00C2ADDB /* qwordswithoutu2.plist */; };
+		FFCCCBE31816DBD800C2ADDB /* scrabbletile30.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCCCBE21816DBD800C2ADDB /* scrabbletile30.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFCCCBB81816D23C00C2ADDB /* Scrabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCCCBBB1816D23C00C2ADDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFCCCBBD1816D23C00C2ADDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFCCCBBF1816D23C00C2ADDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFCCCBC31816D23C00C2ADDB /* Scrabble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scrabble-Info.plist"; sourceTree = "<group>"; };
+		FFCCCBC51816D23C00C2ADDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFCCCBC71816D23C00C2ADDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFCCCBC91816D23C00C2ADDB /* Scrabble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scrabble-Prefix.pch"; sourceTree = "<group>"; };
+		FFCCCBCA1816D23C00C2ADDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFCCCBCB1816D23C00C2ADDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFCCCBCD1816D23C00C2ADDB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FFCCCBCF1816D23C00C2ADDB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FFCCCBD11816D23C00C2ADDB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FFCCCBD41816D23C00C2ADDB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FFCCCBD61816D23C00C2ADDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFCCCBD71816D23C00C2ADDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFCCCBDE1816D48000C2ADDB /* qwordswithoutu1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = qwordswithoutu1.plist; sourceTree = "<group>"; };
+		FFCCCBE01816D4FA00C2ADDB /* qwordswithoutu2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = qwordswithoutu2.plist; path = ../qwordswithoutu2.plist; sourceTree = "<group>"; };
+		FFCCCBE21816DBD800C2ADDB /* scrabbletile30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrabbletile30.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCCCBB51816D23C00C2ADDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCCBBC1816D23C00C2ADDB /* UIKit.framework in Frameworks */,
+				FFCCCBBE1816D23C00C2ADDB /* Foundation.framework in Frameworks */,
+				FFCCCBC01816D23C00C2ADDB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFCCCBAF1816D23C00C2ADDB = {
+			isa = PBXGroup;
+			children = (
+				FFCCCBC11816D23C00C2ADDB /* Scrabble */,
+				FFCCCBBA1816D23C00C2ADDB /* Frameworks */,
+				FFCCCBB91816D23C00C2ADDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCCCBB91816D23C00C2ADDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCCBB81816D23C00C2ADDB /* Scrabble.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCCCBBA1816D23C00C2ADDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCCBBB1816D23C00C2ADDB /* UIKit.framework */,
+				FFCCCBBD1816D23C00C2ADDB /* Foundation.framework */,
+				FFCCCBBF1816D23C00C2ADDB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCCCBC11816D23C00C2ADDB /* Scrabble */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCCBD31816D23C00C2ADDB /* MainStoryboard.storyboard */,
+				FFCCCBD61816D23C00C2ADDB /* ViewController.h */,
+				FFCCCBD71816D23C00C2ADDB /* ViewController.m */,
+				FFCCCBCA1816D23C00C2ADDB /* AppDelegate.h */,
+				FFCCCBCB1816D23C00C2ADDB /* AppDelegate.m */,
+				FFCCCBC21816D23C00C2ADDB /* Supporting Files */,
+			);
+			path = Scrabble;
+			sourceTree = "<group>";
+		};
+		FFCCCBC21816D23C00C2ADDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFCCCBE21816DBD800C2ADDB /* scrabbletile30.png */,
+				FFCCCBE01816D4FA00C2ADDB /* qwordswithoutu2.plist */,
+				FFCCCBDE1816D48000C2ADDB /* qwordswithoutu1.plist */,
+				FFCCCBC31816D23C00C2ADDB /* Scrabble-Info.plist */,
+				FFCCCBC41816D23C00C2ADDB /* InfoPlist.strings */,
+				FFCCCBC71816D23C00C2ADDB /* main.m */,
+				FFCCCBC91816D23C00C2ADDB /* Scrabble-Prefix.pch */,
+				FFCCCBCD1816D23C00C2ADDB /* Default.png */,
+				FFCCCBCF1816D23C00C2ADDB /* Default@2x.png */,
+				FFCCCBD11816D23C00C2ADDB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCCCBB71816D23C00C2ADDB /* Scrabble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCCCBDB1816D23C00C2ADDB /* Build configuration list for PBXNativeTarget "Scrabble" */;
+			buildPhases = (
+				FFCCCBB41816D23C00C2ADDB /* Sources */,
+				FFCCCBB51816D23C00C2ADDB /* Frameworks */,
+				FFCCCBB61816D23C00C2ADDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scrabble;
+			productName = Scrabble;
+			productReference = FFCCCBB81816D23C00C2ADDB /* Scrabble.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFCCCBB01816D23C00C2ADDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Neil Dimuccio";
+			};
+			buildConfigurationList = FFCCCBB31816D23C00C2ADDB /* Build configuration list for PBXProject "Scrabble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFCCCBAF1816D23C00C2ADDB;
+			productRefGroup = FFCCCBB91816D23C00C2ADDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCCCBB71816D23C00C2ADDB /* Scrabble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCCCBB61816D23C00C2ADDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCCBC61816D23C00C2ADDB /* InfoPlist.strings in Resources */,
+				FFCCCBCE1816D23C00C2ADDB /* Default.png in Resources */,
+				FFCCCBD01816D23C00C2ADDB /* Default@2x.png in Resources */,
+				FFCCCBD21816D23C00C2ADDB /* Default-568h@2x.png in Resources */,
+				FFCCCBD51816D23C00C2ADDB /* MainStoryboard.storyboard in Resources */,
+				FFCCCBDF1816D48000C2ADDB /* qwordswithoutu1.plist in Resources */,
+				FFCCCBE11816D4FA00C2ADDB /* qwordswithoutu2.plist in Resources */,
+				FFCCCBE31816DBD800C2ADDB /* scrabbletile30.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCCCBB41816D23C00C2ADDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCCCBC81816D23C00C2ADDB /* main.m in Sources */,
+				FFCCCBCC1816D23C00C2ADDB /* AppDelegate.m in Sources */,
+				FFCCCBD81816D23C00C2ADDB /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFCCCBC41816D23C00C2ADDB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCCCBC51816D23C00C2ADDB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFCCCBD31816D23C00C2ADDB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCCCBD41816D23C00C2ADDB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFCCCBD91816D23C00C2ADDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFCCCBDA1816D23C00C2ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFCCCBDC1816D23C00C2ADDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scrabble/Scrabble-Prefix.pch";
+				INFOPLIST_FILE = "Scrabble/Scrabble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFCCCBDD1816D23C00C2ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scrabble/Scrabble-Prefix.pch";
+				INFOPLIST_FILE = "Scrabble/Scrabble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFCCCBB31816D23C00C2ADDB /* Build configuration list for PBXProject "Scrabble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCCCBD91816D23C00C2ADDB /* Debug */,
+				FFCCCBDA1816D23C00C2ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCCCBDB1816D23C00C2ADDB /* Build configuration list for PBXNativeTarget "Scrabble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCCCBDC1816D23C00C2ADDB /* Debug */,
+				FFCCCBDD1816D23C00C2ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFCCCBB01816D23C00C2ADDB /* Project object */;
+}

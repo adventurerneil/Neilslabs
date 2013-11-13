@@ -267,4 +267,8 @@
     return UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskLandscapeLeft   | UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+//Set things here for each time view shows up - viewdidload is on run only.
+}
+
 @end

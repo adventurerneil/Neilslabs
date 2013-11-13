@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhY-z9-LjP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="sqd-jg-Jy6"/>
+                                    <constraint firstAttribute="width" constant="205" id="vxG-Xs-DTM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyU-xn-pzg">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GQ2-f1-ccS"/>
+                                    <barButtonItem title="Info" id="MxB-Rb-Hkb">
+                                        <connections>
+                                            <segue destination="seV-MO-dbo" kind="modal" identifier="Info Button Transition" modalTransitionStyle="crossDissolve" id="nug-1t-yw1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1h-3i-RmR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="01W-4W-xrM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVq-5k-BJp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="Exm-7X-mNk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hVq-5k-BJp" firstAttribute="trailing" secondItem="L1h-3i-RmR" secondAttribute="trailing" type="default" id="5Sm-nG-Jk0"/>
+                            <constraint firstItem="yyU-xn-pzg" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="8t6-Qh-nZQ"/>
+                            <constraint firstItem="ZhY-z9-LjP" firstAttribute="leading" secondItem="L1h-3i-RmR" secondAttribute="leading" type="default" id="ATW-ro-E9d"/>
+                            <constraint firstItem="yyU-xn-pzg" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Hxm-8w-6I4"/>
+                            <constraint firstItem="ZhY-z9-LjP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="53" id="KJg-Ai-R3z"/>
+                            <constraint firstItem="yyU-xn-pzg" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Kmi-Hf-WZI"/>
+                            <constraint firstItem="hVq-5k-BJp" firstAttribute="leading" secondItem="L1h-3i-RmR" secondAttribute="leading" type="default" id="L3k-Gl-N1Z"/>
+                            <constraint firstItem="L1h-3i-RmR" firstAttribute="trailing" secondItem="ZhY-z9-LjP" secondAttribute="trailing" type="default" id="OYy-oc-qZj"/>
+                            <constraint firstItem="L1h-3i-RmR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="141" id="WQN-13-Tee"/>
+                            <constraint firstItem="yyU-xn-pzg" firstAttribute="centerX" secondItem="ZhY-z9-LjP" secondAttribute="centerX" type="default" id="dwO-nC-s6i"/>
+                            <constraint firstItem="hVq-5k-BJp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="251" id="hL9-4V-HMx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="hVq-5k-BJp" id="W4h-uv-IhQ"/>
+                        <outlet property="bookLabel" destination="L1h-3i-RmR" id="oqg-hC-cvY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="274"/>
+        </scene>
+        <!--Scene2 View Controller-->
+        <scene sceneID="vga-nN-hxD">
+            <objects>
+                <viewController id="seV-MO-dbo" customClass="Scene2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XjB-Yk-CxG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="My Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntd-B3-Dpl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BcA-LD-5A6"/>
+                                    <constraint firstAttribute="width" constant="143" id="cfH-2F-YOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iz-lt-q2f">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="13U-u2-I0I"/>
+                                    <barButtonItem title="Done" id="Ta7-Da-VZ6">
+                                        <connections>
+                                            <segue destination="En0-2n-qfz" kind="unwind" identifier="donezoes" unwindAction="returned:" id="YUc-Yv-rER"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Favorite book:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYW-5z-OGk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="OOa-0V-LRj"/>
+                                    <constraint firstAttribute="height" constant="43" id="uU1-cS-8en"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Favorite Author:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyX-EN-yX2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="eYy-ay-0SW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h51-Jn-cfw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="5sq-UU-4f4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHI-8k-GO9">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SYW-5z-OGk" firstAttribute="leading" secondItem="XjB-Yk-CxG" secondAttribute="leading" constant="63" id="5hI-8F-UKy"/>
+                            <constraint firstItem="5iz-lt-q2f" firstAttribute="leading" secondItem="XjB-Yk-CxG" secondAttribute="leading" type="default" id="FUt-bA-P4T"/>
+                            <constraint firstItem="ntd-B3-Dpl" firstAttribute="trailing" secondItem="h51-Jn-cfw" secondAttribute="trailing" type="default" id="HQ1-Ne-vpa"/>
+                            <constraint firstItem="lHI-8k-GO9" firstAttribute="leading" secondItem="pyX-EN-yX2" secondAttribute="leading" type="default" id="KUi-0l-5Nx"/>
+                            <constraint firstItem="h51-Jn-cfw" firstAttribute="top" secondItem="XjB-Yk-CxG" secondAttribute="top" constant="172" id="NC4-MP-Tpq"/>
+                            <constraint firstItem="ntd-B3-Dpl" firstAttribute="top" secondItem="XjB-Yk-CxG" secondAttribute="top" constant="50" id="NLh-78-t0p"/>
+                            <constraint firstItem="5iz-lt-q2f" firstAttribute="top" secondItem="XjB-Yk-CxG" secondAttribute="top" type="default" id="UgH-Am-YH3"/>
+                            <constraint firstItem="h51-Jn-cfw" firstAttribute="leading" secondItem="SYW-5z-OGk" secondAttribute="leading" type="default" id="ac9-9N-1Zy"/>
+                            <constraint firstItem="lHI-8k-GO9" firstAttribute="top" secondItem="XjB-Yk-CxG" secondAttribute="top" constant="272" id="ci9-tQ-jcf"/>
+                            <constraint firstItem="5iz-lt-q2f" firstAttribute="trailing" secondItem="XjB-Yk-CxG" secondAttribute="trailing" type="default" id="hUU-pg-5Yt"/>
+                            <constraint firstItem="pyX-EN-yX2" firstAttribute="trailing" secondItem="SYW-5z-OGk" secondAttribute="trailing" type="default" id="hYC-iL-9QX"/>
+                            <constraint firstItem="SYW-5z-OGk" firstAttribute="top" secondItem="XjB-Yk-CxG" secondAttribute="top" constant="119" id="iX2-Qy-3kj"/>
+                            <constraint firstItem="lHI-8k-GO9" firstAttribute="trailing" secondItem="h51-Jn-cfw" secondAttribute="trailing" type="default" id="jjD-oi-eIH"/>
+                            <constraint firstItem="pyX-EN-yX2" firstAttribute="top" secondItem="XjB-Yk-CxG" secondAttribute="top" constant="217" id="kY2-nw-VNt"/>
+                            <constraint firstItem="h51-Jn-cfw" firstAttribute="leading" secondItem="pyX-EN-yX2" secondAttribute="leading" type="default" id="yOH-p4-7i9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userAuthor" destination="lHI-8k-GO9" id="k2U-Tr-ljO"/>
+                        <outlet property="userBook" destination="h51-Jn-cfw" id="mst-ER-Uhe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCS-Og-izy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="En0-2n-qfz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="342"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="Scene2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Scene2ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="userAuthor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userBook" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="returned:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="outlet" name="authorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

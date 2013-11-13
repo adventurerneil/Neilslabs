@@ -30,6 +30,8 @@ float optionsVolume;
 @property (nonatomic, assign) id <OptionsViewControllerDelegate> delegate;
 @property (nonatomic, strong) UITextField *someText;
 
+@property (weak, nonatomic) UIViewController *returnViewController;
+
 - (IBAction)returnButtonPressed:(id)sender; 
 
 
