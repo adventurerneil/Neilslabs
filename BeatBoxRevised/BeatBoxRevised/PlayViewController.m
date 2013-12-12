@@ -7,13 +7,7 @@
 //
 
 #import "PlayViewController.h"
-#import "OptionsViewController.h"
 
-/*
-#import <AudioToolbox/AudioToolbox.h>
-#import <AVFoundation/AVFoundation.h>
-#import <QuartzCore/QuartzCore.h>
-*/
 
 @interface PlayViewController (){
     AVAudioPlayer *player;
@@ -28,11 +22,12 @@
 {
     [super viewDidLoad];
 	isFirstTime = YES;
+    loopIsPlaying = NO;
     // Disable Stop/Play button when application launches
     [_stopButton setEnabled:NO];
     [_playButton setEnabled:NO];
     
-    // Set the audio file
+    // Set the audio file for recording 
     NSArray *pathComponents = [NSArray arrayWithObjects:
                                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],
                                @"Sample.m4a",
@@ -59,15 +54,14 @@
     
     // Set rate for playback
     player.enableRate=YES;
+    _initialReplaySpeed = 1.0f;
     
     // Set initial Volume
-    _initialVolume = 1.0f;
+    _initialVolume = 0.8f;
     
-    // See if anything's working or not:
-    [_VolumeOutput setText:[NSString stringWithFormat:@"Vol %f", _optionsVolume]];
-    [_ReplayOutput setText:[NSString stringWithFormat:@"Rep %f", _replay]];
-    self.volumeEntry.delegate = self;
-
+    // Set initial Pan
+    _initialPan = 0.0f;
+    
 
 }
 
@@ -92,8 +86,12 @@
     audioPlayer2 = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     if (_volumeChanged == NO) {
         audioPlayer2.volume = _initialVolume;
+        NSLog(@"player 2 if vol: %f", audioPlayer2.volume);
     }
-    else audioPlayer2.volume = _optionsVolume;
+    else {
+        audioPlayer2.volume = _optionsVolume;
+        NSLog(@"player 2 else vol: %f", audioPlayer2.volume);
+    }
     [audioPlayer2 play];
 }
 
@@ -124,9 +122,17 @@
 - (IBAction)playPressed:(UIButton *)sender {
     [_playButton setEnabled:YES];
     if (!recorder.recording){
+        if (_replayChanged == NO) {
+            player.rate=_initialReplaySpeed;
+        NSLog(@"Play replay speed if: %f", player.rate);}
+        else if (_replayChanged == YES) {
+            player.rate=_replay;
+        NSLog(@"Play replay speed else 2: %f", _replay);}
+        
+                
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
         
-        player.rate=2.0f;
+        
         [player setDelegate:self];
         [player play];
     }
@@ -135,7 +141,10 @@
 - (IBAction)repeatPressed:(UIButton *)sender {
     if (!recorder.recording){
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
-        player.rate=2.0f;
+        if (_replayChanged == NO) {
+            player.rate=_initialReplaySpeed; }
+        else if (_replayChanged == YES) {
+            player.rate=_replay;}
         [player setDelegate:self];
         [player play];
         
@@ -224,42 +233,83 @@
     [_playButton setEnabled:YES];
 }
 
-- (IBAction)unwindToPlayViewController:(UIStoryboardSegue *)unwindSegue
-{
+- (IBAction)unwindToPlayViewControllerFromOptions:(UIStoryboardSegue *)unwindSegue{
+    //Want to pass in Options stuff HERE
     
+    if([unwindSegue.identifier isEqualToString:@"optionsSegue"]){  //This ain't gonna work... for now ;) 
+        NSLog(@"options segue");
+    }
+    
+    OptionsViewController *options = unwindSegue.sourceViewController;
+    NSString *volumeText = options.volumeLabel.text;
+    CGFloat newVolume = [volumeText floatValue];
+    
+    NSString *replayText = options.replayLabel.text;
+    CGFloat newReplaySpeed = [replayText floatValue];
+    
+    //See if the user changed the volume. If so, pass in new Volume:
+    if (_volumeChanged == NO && (newVolume != _initialVolume)) { // volume has not been changed before, so change it
+        _volumeChanged = YES;
+        _optionsVolume = newVolume;
+    } else if (_volumeChanged == YES && newVolume != _optionsVolume) { // volume has been changed before and is different, so change it again
+        _volumeChanged = YES;
+        _optionsVolume = newVolume;
+    }
+    
+    //See if user changed the replay speed. If so, pass in new Replay:
+    if (_replayChanged == NO && (newReplaySpeed != _initialReplaySpeed)) { // replay has not been changed before, so change it
+        _replayChanged = YES;
+        _replay = newReplaySpeed;
+    } else if (_replayChanged == YES && newReplaySpeed != _replay) { // replay has been changed before and is different, so change it again
+        _replayChanged = YES;
+        _replay = newReplaySpeed;
+    }
+    
+    NSLog(@"End of unwind, volume is: %0.1f", newVolume);
+    NSLog(@"End of unwind, replay is: %f", newReplaySpeed);
+
+    //NSLog(@"in unwind: %f", _optionsVolume);
+    audioPlayer1.volume = _optionsVolume;
+    audioPlayer2.volume = _optionsVolume;
+    audioPlayer3.volume = _optionsVolume;
+    audioPlayer4.volume = _optionsVolume;
+    player.rate = _replay;   // double check this...
+}
+
+- (IBAction)unwindToPlayViewControllerFromPlay2:(UIStoryboardSegue *)unwindSegue{
+
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"prepare in play 1");
     //if...
     //OptionsViewController *ViewController = segue.destinationViewController;
     //ViewController.delegate = self;
-}
-
--(void)done:(NSString *)name {
-    [self dismissViewControllerAnimated:YES completion:nil];
-    _VolumeOutput.text=name;
-}
-
-- (IBAction)volumeEntry:(UITextField *)sender {
-}
-
-- (IBAction)replayEntry:(UITextField *)sender {
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField;{
-    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hey, boss!!" message:self.volumeEntry.text delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    //[alert show];
-    //NSString *string = _volumeEntry;
-    //int value = [string intValue];
-
-    [self.volumeEntry resignFirstResponder];
-    return YES;
+    [audioPlayerLoop stop];
+    
+    //Set slider values:
+    
+    
     
 }
 
+/*-(void)done:(NSString *)name {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    _VolumeOutput.text=name;
+}*/
+
+- (IBAction)done:(UIStoryboardSegue *)segue {
+    NSLog(@"Done method triggered");
+    /*ConfirmationViewController *cc = [segue sourceViewController];
+    [self setAccountInfo:[cc accountInfo]];
+    [self setShowingSuccessView:YES];*/
+}
+
+
+
 - (BOOL) shouldAutorotate
 {
-    return YES;
+    return NO;
 }
 
 -(NSUInteger)supportedInterfaceOrientations
@@ -269,6 +319,56 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 //Set things here for each time view shows up - viewdidload is on run only.
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+// Become first responder whenever the view appears
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self becomeFirstResponder];
+    
+}
+
+// Resign first responder whenever the view disappears
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self resignFirstResponder];
+}
+
+//Shake method: 
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"DID SHAKE!");
+    
+    if (loopIsPlaying){
+        [audioPlayerLoop stop];
+        loopIsPlaying = NO;
+    }
+    else { // Here's what will happen if the loop isn't playing:
+        if (_volumeChanged == NO) {
+            audioPlayerLoop.volume = _initialVolume;
+        }
+        else {
+            audioPlayerLoop.volume = _optionsVolume;
+        }
+        
+        NSString *audioPath = [[NSBundle mainBundle] pathForResource:@"loopypoo" ofType:@"wav"];
+        NSURL *audioURL = [NSURL fileURLWithPath:audioPath];
+        audioPlayerLoop = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
+        audioPlayerLoop.numberOfLoops = -1;
+        
+        
+
+        [audioPlayerLoop play];
+        loopIsPlaying = YES;
+    }
+    
+    // Play a sound whenever a shake motion starts:
+//    if (motion != UIEventSubtypeMotionShake) return;
+//    [self playSound:startSound];
+    
 }
 
 @end

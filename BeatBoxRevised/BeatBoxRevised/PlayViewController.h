@@ -17,10 +17,12 @@ AVAudioPlayer *audioPlayer1;
 AVAudioPlayer *audioPlayer2;
 AVAudioPlayer *audioPlayer3;
 AVAudioPlayer *audioPlayer4;
+AVAudioPlayer *audioPlayerLoop;
 BOOL isFirstTime;
+BOOL loopIsPlaying;
 
 
-@interface PlayViewController : UIViewController<AVAudioRecorderDelegate, AVAudioPlayerDelegate, UITextFieldDelegate> 
+@interface PlayViewController : UIViewController<AVAudioRecorderDelegate, AVAudioPlayerDelegate> 
 
 
 
@@ -34,9 +36,12 @@ BOOL isFirstTime;
 @property (weak, nonatomic) IBOutlet UIButton *button4;
 @property (nonatomic) float optionsVolume;
 @property (nonatomic) float replay;
+@property (nonatomic) float initialReplaySpeed;
 @property (nonatomic) float initialVolume;
+@property (nonatomic) float initialPan;
 @property (nonatomic) BOOL volumeChanged;
 @property (nonatomic) BOOL replayChanged;
+@property (nonatomic) BOOL panningChanged;
 
 - (IBAction)button1Pressed:(UIButton *)sender;
 - (IBAction)button2Pressed:(UIButton *)sender;
@@ -48,10 +53,6 @@ BOOL isFirstTime;
 - (IBAction)stopPressed:(UIButton *)sender;
 - (IBAction)recordPressed:(UIButton *)sender;
 
-@property (strong, nonatomic) IBOutlet UILabel *VolumeOutput;
-@property (strong, nonatomic) IBOutlet UILabel *ReplayOutput;
-- (IBAction)volumeEntry:(UITextField *)sender;
-- (IBAction)replayEntry:(UITextField *)sender;
-@property (strong, nonatomic) IBOutlet UITextField *volumeEntry;
+
 
 @end

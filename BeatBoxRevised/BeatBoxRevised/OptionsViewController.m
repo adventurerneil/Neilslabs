@@ -19,22 +19,29 @@
 @synthesize rate;
 @synthesize volumeLabel;
 @synthesize replayLabel;
+@synthesize panningLabel;
 @synthesize optionsVolumeValue;
 @synthesize optionsRateValue;
+@synthesize optionsPanningSlider;
 @synthesize delegate = _delegate;
 
--(IBAction)returnButtonPressed:(id)sender{
-    [self.delegate done:someText.text];
-}
+//-(IBAction)returnButtonPressed:(id)sender{
+//    [self.delegate done:someText.text];
+//}
 
 //
-@synthesize someText;
+//@synthesize someText;
 //
-
+//Set default values for 3 sound variables
 float volumeValue = 80;
 float replayValue = 1;
+float panningValue = 0;
+
+
+//Declare Bools for if values are changed:
 BOOL volumeChanged;
 BOOL replayChanged;
+BOOL panningChanged;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -70,32 +77,47 @@ BOOL replayChanged;
 }
 */
  
-- (IBAction)buttonsChanger:(id)sender {
+//- (IBAction)buttonsChanger:(id)sender {
+//}
+
+- (IBAction)panningSlider:(UISlider *)sender {
+    panningValue=sender.value;
+    panningLabel.text=[NSString stringWithFormat:@"%0.1f", panningValue];
+    panningChanged = YES;
+    
 }
 
 -(IBAction)volumeSlider:(UISlider *)sender{
     volumeValue=sender.value;
-    volumeLabel.text=[NSString stringWithFormat:@"%f", volumeValue];
+    volumeLabel.text=[NSString stringWithFormat:@"%0.1f", volumeValue];
     volumeChanged = YES;
     
 }
 
 - (IBAction)replaySlider:(UISlider *)sender{
     replayValue=sender.value;
-    replayLabel.text=[NSString stringWithFormat:@"%f", replayValue];
+    replayLabel.text=[NSString stringWithFormat:@"%0.1f", replayValue];
     replayChanged = YES;
 }
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"StupidSegue"]){
+    NSLog(@"prepare 1 in options");
+    if([segue.identifier isEqualToString:@"optionsSegue"]){
+        NSLog(@"prepare 2 in options");}  //double check this IF...
+    
         // Get destination view
         PlayViewController *vc = [segue destinationViewController];
         
         // These SHOULD update the corresponding values in the destination ViewController...
-        vc.optionsVolume = volumeValue;
+    if (volumeChanged) {
+        vc.optionsVolume = optionsVolumeValue.value;
+    }
+    //else vc.optionsVolume
+      //  vc.replay = _initalVolume.value;
+        
         //[vc setOptionsVolume:volumeValue];
-        [vc setReplay:replayValue];
+        //[vc setReplay:replayValue];
         [vc setVolumeChanged:YES];
         [vc setReplayChanged:YES];
         
@@ -106,7 +128,7 @@ BOOL replayChanged;
         //UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
         //PlayViewController *controller = (PlayViewController *)navController.topViewController;
         //controller.isSomethingEnabled = YES;
-    }
+    
 }
 
 

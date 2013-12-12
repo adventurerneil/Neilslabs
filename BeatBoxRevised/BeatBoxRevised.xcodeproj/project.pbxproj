@@ -21,6 +21,7 @@
 		CE27F84218320FEC004DD88D /* Pong2003.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83A18320FEC004DD88D /* Pong2003.wav */; };
 		CE27F84318320FEC004DD88D /* Quack.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83B18320FEC004DD88D /* Quack.wav */; };
 		CE27F84418320FEC004DD88D /* Sosumi.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE27F83C18320FEC004DD88D /* Sosumi.wav */; };
+		CE94EE47185A3D2E0019E5D2 /* loopypoo.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE94EE46185A3D2E0019E5D2 /* loopypoo.wav */; };
 		FF924A261830379000ACD7D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A251830379000ACD7D5 /* UIKit.framework */; };
 		FF924A281830379000ACD7D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A271830379000ACD7D5 /* Foundation.framework */; };
 		FF924A2A1830379000ACD7D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF924A291830379000ACD7D5 /* CoreGraphics.framework */; };
@@ -60,6 +61,7 @@
 		CE27F83A18320FEC004DD88D /* Pong2003.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pong2003.wav; sourceTree = "<group>"; };
 		CE27F83B18320FEC004DD88D /* Quack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Quack.wav; sourceTree = "<group>"; };
 		CE27F83C18320FEC004DD88D /* Sosumi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sosumi.wav; sourceTree = "<group>"; };
+		CE94EE46185A3D2E0019E5D2 /* loopypoo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loopypoo.wav; sourceTree = "<group>"; };
 		FF924A221830379000ACD7D5 /* BeatBoxRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatBoxRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF924A251830379000ACD7D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FF924A271830379000ACD7D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -169,6 +171,7 @@
 				CE27F83618320FEB004DD88D /* ChuToy.wav */,
 				CE27F83718320FEB004DD88D /* Clink-Klank.wav */,
 				CE27F83818320FEB004DD88D /* Indigo.wav */,
+				CE94EE46185A3D2E0019E5D2 /* loopypoo.wav */,
 				CE27F83918320FEC004DD88D /* newbip.wav */,
 				CE27F83A18320FEC004DD88D /* Pong2003.wav */,
 				CE27F83B18320FEC004DD88D /* Quack.wav */,
@@ -263,6 +266,7 @@
 				CE0640F51832815200D61529 /* beatbox152.png in Resources */,
 				CE0640F71832818700D61529 /* 144.png in Resources */,
 				CE0640F9183281BC00D61529 /* 72.png in Resources */,
+				CE94EE47185A3D2E0019E5D2 /* loopypoo.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +373,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeatBoxRevised/BeatBoxRevised-Prefix.pch";
 				INFOPLIST_FILE = "BeatBoxRevised/BeatBoxRevised-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -380,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeatBoxRevised/BeatBoxRevised-Prefix.pch";
 				INFOPLIST_FILE = "BeatBoxRevised/BeatBoxRevised-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

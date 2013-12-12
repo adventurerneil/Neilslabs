@@ -8,36 +8,44 @@
 
 #import <UIKit/UIKit.h>
 #import "PlayViewController.h"
+#import "Play2ViewController.h"
 
 @protocol OptionsViewControllerDelegate <NSObject>
--(void) done:(NSString *) someText;
+//-(void) done:(NSString *) someText;
 
 @end
 
 float optionsVolume;
+float initalVolume;
 
 @interface OptionsViewController : UIViewController{
 //@property (nonatomic, weak) id<OptionsViewControllerDelegate> delegate;
     id delegate;
-    IBOutlet UITextField *sometext;
+    //IBOutlet UITextField *sometext;
 }
 @property (weak, nonatomic) IBOutlet UILabel *volumeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *replayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *panningLabel;
+
 @property (strong, nonatomic) IBOutlet UISlider *optionsVolumeValue;
 @property (strong, nonatomic) IBOutlet UISlider *optionsRateValue;
+@property (weak, nonatomic) IBOutlet UISlider *optionsPanningSlider;
+
+
 @property (strong, nonatomic) NSNumber *volume;
 @property (strong, nonatomic) NSNumber *rate;
+@property (strong, nonatomic) NSNumber *panning;
+
 @property (nonatomic, assign) id <OptionsViewControllerDelegate> delegate;
-@property (nonatomic, strong) UITextField *someText;
 
 @property (weak, nonatomic) UIViewController *returnViewController;
 
-- (IBAction)returnButtonPressed:(id)sender; 
 
 
 - (IBAction)volumeSlider:(UISlider *)sender;
 - (IBAction)replaySlider:(UISlider *)sender;
-- (IBAction)buttonsChanger:(id)sender;
+- (IBAction)panningSlider:(UISlider *)sender;
+
 
 //May not be necessary:
 //- (IBAction) handleCloseButton:(id)sender;
