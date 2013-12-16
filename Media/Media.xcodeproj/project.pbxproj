@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE94EE49185A79920019E5D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94EE48185A79920019E5D2 /* AVFoundation.framework */; };
+		CE94EE4B185A7A280019E5D2 /* loopypoo.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE94EE4A185A7A280019E5D2 /* loopypoo.wav */; };
+		CEFCA611183BD964002A858F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFCA610183BD964002A858F /* MediaPlayer.framework */; };
+		FF8590CA183BC932007E0C52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8590C9183BC932007E0C52 /* UIKit.framework */; };
+		FF8590CC183BC932007E0C52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8590CB183BC932007E0C52 /* Foundation.framework */; };
+		FF8590CE183BC932007E0C52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8590CD183BC932007E0C52 /* CoreGraphics.framework */; };
+		FF8590D4183BC932007E0C52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF8590D2183BC932007E0C52 /* InfoPlist.strings */; };
+		FF8590D6183BC932007E0C52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8590D5183BC932007E0C52 /* main.m */; };
+		FF8590DA183BC932007E0C52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8590D9183BC932007E0C52 /* AppDelegate.m */; };
+		FF8590DC183BC932007E0C52 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8590DB183BC932007E0C52 /* Default.png */; };
+		FF8590DE183BC932007E0C52 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8590DD183BC932007E0C52 /* Default@2x.png */; };
+		FF8590E0183BC932007E0C52 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8590DF183BC932007E0C52 /* Default-568h@2x.png */; };
+		FF8590E3183BC932007E0C52 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8590E1183BC932007E0C52 /* MainStoryboard.storyboard */; };
+		FF8590E6183BC932007E0C52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8590E5183BC932007E0C52 /* ViewController.m */; };
+		FF8590ED183BCA02007E0C52 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8590EC183BCA02007E0C52 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE94EE48185A79920019E5D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE94EE4A185A7A280019E5D2 /* loopypoo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loopypoo.wav; sourceTree = "<group>"; };
+		CEFCA610183BD964002A858F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FF8590C6183BC932007E0C52 /* Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Media.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8590C9183BC932007E0C52 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF8590CB183BC932007E0C52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF8590CD183BC932007E0C52 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF8590D1183BC932007E0C52 /* Media-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Media-Info.plist"; sourceTree = "<group>"; };
+		FF8590D3183BC932007E0C52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF8590D5183BC932007E0C52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF8590D7183BC932007E0C52 /* Media-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Media-Prefix.pch"; sourceTree = "<group>"; };
+		FF8590D8183BC932007E0C52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF8590D9183BC932007E0C52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF8590DB183BC932007E0C52 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FF8590DD183BC932007E0C52 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FF8590DF183BC932007E0C52 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FF8590E2183BC932007E0C52 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FF8590E4183BC932007E0C52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF8590E5183BC932007E0C52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF8590EC183BCA02007E0C52 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF8590C3183BC932007E0C52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE94EE49185A79920019E5D2 /* AVFoundation.framework in Frameworks */,
+				CEFCA611183BD964002A858F /* MediaPlayer.framework in Frameworks */,
+				FF8590ED183BCA02007E0C52 /* MobileCoreServices.framework in Frameworks */,
+				FF8590CA183BC932007E0C52 /* UIKit.framework in Frameworks */,
+				FF8590CC183BC932007E0C52 /* Foundation.framework in Frameworks */,
+				FF8590CE183BC932007E0C52 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF8590BD183BC932007E0C52 = {
+			isa = PBXGroup;
+			children = (
+				FF8590CF183BC932007E0C52 /* Media */,
+				FF8590C8183BC932007E0C52 /* Frameworks */,
+				FF8590C7183BC932007E0C52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF8590C7183BC932007E0C52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF8590C6183BC932007E0C52 /* Media.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF8590C8183BC932007E0C52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE94EE48185A79920019E5D2 /* AVFoundation.framework */,
+				CEFCA610183BD964002A858F /* MediaPlayer.framework */,
+				FF8590EC183BCA02007E0C52 /* MobileCoreServices.framework */,
+				FF8590C9183BC932007E0C52 /* UIKit.framework */,
+				FF8590CB183BC932007E0C52 /* Foundation.framework */,
+				FF8590CD183BC932007E0C52 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF8590CF183BC932007E0C52 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				FF8590D8183BC932007E0C52 /* AppDelegate.h */,
+				FF8590D9183BC932007E0C52 /* AppDelegate.m */,
+				FF8590E1183BC932007E0C52 /* MainStoryboard.storyboard */,
+				FF8590E4183BC932007E0C52 /* ViewController.h */,
+				FF8590E5183BC932007E0C52 /* ViewController.m */,
+				FF8590D0183BC932007E0C52 /* Supporting Files */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		FF8590D0183BC932007E0C52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE94EE4A185A7A280019E5D2 /* loopypoo.wav */,
+				FF8590D1183BC932007E0C52 /* Media-Info.plist */,
+				FF8590D2183BC932007E0C52 /* InfoPlist.strings */,
+				FF8590D5183BC932007E0C52 /* main.m */,
+				FF8590D7183BC932007E0C52 /* Media-Prefix.pch */,
+				FF8590DB183BC932007E0C52 /* Default.png */,
+				FF8590DD183BC932007E0C52 /* Default@2x.png */,
+				FF8590DF183BC932007E0C52 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF8590C5183BC932007E0C52 /* Media */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8590E9183BC932007E0C52 /* Build configuration list for PBXNativeTarget "Media" */;
+			buildPhases = (
+				FF8590C2183BC932007E0C52 /* Sources */,
+				FF8590C3183BC932007E0C52 /* Frameworks */,
+				FF8590C4183BC932007E0C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Media;
+			productName = Media;
+			productReference = FF8590C6183BC932007E0C52 /* Media.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF8590BE183BC932007E0C52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Neil Dimuccio";
+			};
+			buildConfigurationList = FF8590C1183BC932007E0C52 /* Build configuration list for PBXProject "Media" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF8590BD183BC932007E0C52;
+			productRefGroup = FF8590C7183BC932007E0C52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF8590C5183BC932007E0C52 /* Media */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF8590C4183BC932007E0C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8590D4183BC932007E0C52 /* InfoPlist.strings in Resources */,
+				FF8590DC183BC932007E0C52 /* Default.png in Resources */,
+				FF8590DE183BC932007E0C52 /* Default@2x.png in Resources */,
+				FF8590E0183BC932007E0C52 /* Default-568h@2x.png in Resources */,
+				FF8590E3183BC932007E0C52 /* MainStoryboard.storyboard in Resources */,
+				CE94EE4B185A7A280019E5D2 /* loopypoo.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF8590C2183BC932007E0C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8590D6183BC932007E0C52 /* main.m in Sources */,
+				FF8590DA183BC932007E0C52 /* AppDelegate.m in Sources */,
+				FF8590E6183BC932007E0C52 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF8590D2183BC932007E0C52 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8590D3183BC932007E0C52 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF8590E1183BC932007E0C52 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8590E2183BC932007E0C52 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF8590E7183BC932007E0C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF8590E8183BC932007E0C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF8590EA183BC932007E0C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Media/Media-Prefix.pch";
+				INFOPLIST_FILE = "Media/Media-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF8590EB183BC932007E0C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Media/Media-Prefix.pch";
+				INFOPLIST_FILE = "Media/Media-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF8590C1183BC932007E0C52 /* Build configuration list for PBXProject "Media" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8590E7183BC932007E0C52 /* Debug */,
+				FF8590E8183BC932007E0C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8590E9183BC932007E0C52 /* Build configuration list for PBXNativeTarget "Media" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8590EA183BC932007E0C52 /* Debug */,
+				FF8590EB183BC932007E0C52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF8590BE183BC932007E0C52 /* Project object */;
+}
